@@ -50,9 +50,8 @@ function homeController(page) {
     $(page).find('#discordian-text').text(text);
     $(page).find('#share-button').on('click', function () {
         window.plugins.socialsharing.shareWithOptions({
-            message: 'share this',
-            subject: 'Wanda',
-            url: 'https://www.google.com'
+            message: text,
+            subject: 'A message from Wanda'
         }, noop, noop);
     });
 }
