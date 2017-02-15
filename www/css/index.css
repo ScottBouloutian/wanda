@@ -2,6 +2,11 @@
     padding-top: 15px;
 }
 
+.app-topbar > .app-button {
+    position: relative;
+    top: 15px;
+}
+
 .fish-image {
     width: 50%;
     margin-top: 32px;
@@ -13,4 +18,32 @@
 
 #discordian-text {
     margin: 8px 64px 8px 64px;
+}
+
+.profile {
+    border-radius: 10% !important;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.about {
+    font-size: 14px;
+}
+
+.about p {
+    margin: inherit;
+}
+
+.about .links {
+    display: inline-block;
+    text-align: center;
+}
+
+#product-button {
+    display: none;
+}
+
+#product-button.available {
+    display: block;
 }

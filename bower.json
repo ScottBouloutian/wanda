@@ -1,0 +1,23 @@
+{
+  "name": "wanda",
+  "homepage": "https://github.com/ScottBouloutian/foxo",
+  "authors": [
+    "Scott Bouloutian <ScottBouloutian@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "appjs": "^3.0.10",
+    "zeptojs": "^1.2.0",
+    "font-awesome": "^4.7.0"
+  }
+}
