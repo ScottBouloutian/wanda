@@ -128,20 +128,26 @@ function homeController(page) {
 function infoController(page) {
     var mailLink = $(page).find('#mail-link');
     var productButton = $(page).find('#product-button');
+    var restoreButton = $(page).find('#restore-button');
     $(page).find('#donate-button').on('click', function () {
         window.open('https://ko-fi.com/A214L4K');
     });
     productButton.on('click', function () {
         store.order('remove_ads');
     });
+    restoreButton.on('click', function () {
+        store.refresh();
+    });
 
     // Conditionally display the remove ads button
     function renderPurchase() {
         var product = store.get('remove_ads');
         if (product && product.state === store.VALID && !product.owned && product.canPurchase) {
-            productButton.addClass('available');
+            productButton.removeClass('hidden');
+            restoreButton.removeClass('hidden');
         } else {
-            productButton.removeClass('available');
+            productButton.addClass('hidden');
+            restoreButton.addClass('hidden');
         }
     }
 
